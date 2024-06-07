@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Crud</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <div class="w-full bg-zinc-800 min-h-screen text-white p-10">
+<div class="flex gap-3  text-blue-500 transparent	rounded-md px-3 ">
+    <a    href="/">home</a>
+    <a  class="ml-3"   href="/viewusers">View users</a>
+</div>
+        <form action="/update/<%=user._id%>" method="post">
+            <input class="mt-5 bg-zinc-700 rounded-md px-5 py-1 w-1/4" type="text"  value="<%=user.name%>" name="name">
+
+            <input type="text" value="<%=user.email%>" name="email" class=" ml-3 mt-5 bg-zinc-700 rounded-md px-5 py-1 w-1/4"  >
+            <input type="text"  value="<%=user.image%>" name="image" class=" ml-3 mt-5 bg-zinc-700 rounded-md px-5 py-1 w-1/4"  >
+
+
+            <input type="submit" value="update user"  class="text-zinc-900 ml-3 mt-5 bg-yellow-500 rounded-md px-5 py-1 "  >
+            
+         
+
+        </form>
+
+
+    </div>
+
+</body>
+</html>
